@@ -334,7 +334,33 @@ public class Main extends javax.swing.JFrame {
                 }
 
             } else {
-                JOptionPane.showMessageDialog(this, "invalid Speciality");
+               
+                if(Speciality != "Math" && r3.isSelected() != true)
+                {
+                    cnt++;
+                     JOptionPane.showMessageDialog(this, "inserted successfully");
+                   
+                }
+                else if(Speciality != "Algorithm" && r2.isSelected() != true)
+                {
+                    cnt++;
+                    JOptionPane.showMessageDialog(this, "inserted successfully");
+                    
+                }
+                else{
+                    cnt++;
+                     JOptionPane.showMessageDialog(this, "inserted successfully");
+                   
+                }
+                
+                if(cnt>n)
+                {
+                    JOptionPane.showMessageDialog(this, "Don't matching input number of students");
+
+                    jButton1.setEnabled(false);
+                    jButton2.setEnabled(false);
+                    
+                }
              
 
             }
